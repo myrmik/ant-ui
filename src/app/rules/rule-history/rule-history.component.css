@@ -1,0 +1,16 @@
+.rule-history {
+  padding: 20px;
+  width: 50%;
+  min-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rule-history md-card {
+  margin: 10px 0;
+  padding: 15px 20px 2px;
+}
+
+.rule-history .item-spacer {
+  flex: 1 1 auto;
+}

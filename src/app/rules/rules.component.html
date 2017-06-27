@@ -1,0 +1,22 @@
+<div class="rules">
+
+  <md-toolbar class="items-toolbar">
+    <span class="item-spacer"></span>
+    <button md-fab color="primary" class="items-toolbar-button"><md-icon>add</md-icon></button >
+  </md-toolbar>
+
+  <md-card *ngFor="let rule of rules">
+    <md-card-header class="item-header">
+      <div md-card-avatar class="nyaa-icon"></div>
+      <md-card-title>{{rule.name}}</md-card-title>
+      <md-card-subtitle>{{rule.pubDate | amTimeAgo}}</md-card-subtitle>
+      <span class="item-spacer"></span>
+
+      <button md-mini-fab color="primary" class="item-action-button" (click)="openHistoryDialog(rule.id)"><md-icon>list</md-icon></button>
+      <button md-mini-fab color="warn" class="item-action-button"><md-icon>delete</md-icon></button>
+
+    </md-card-header>
+  </md-card>
+
+
+</div>

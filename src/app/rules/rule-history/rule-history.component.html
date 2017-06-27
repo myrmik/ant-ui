@@ -1,0 +1,12 @@
+<div class="rule-history">
+
+  <md-card *ngFor="let notification of notifications">
+    <md-card-header class="item-header">
+      <md-card-title>{{notification.title}}</md-card-title>
+      <md-card-subtitle>{{notification.pubDate | amTimeAgo}}</md-card-subtitle>
+      <span class="item-spacer"></span>
+    </md-card-header>
+  </md-card>
+
+
+</div>
